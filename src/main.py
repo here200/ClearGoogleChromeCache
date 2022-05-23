@@ -26,7 +26,6 @@ def clear(profile_path):
         print('google_profile_path 不存在')
         return
     # 清除缓存的文件和图片
-    # 这个文件夹里的数据相对较大
     res = os.path.join(profile_path, 'Cache/Cache_Data/')
     removeAllFile(res)
     # 清除历史记录
