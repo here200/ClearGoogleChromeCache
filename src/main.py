@@ -3,7 +3,7 @@ import json
 
 
 # 不删除空文件夹,只删除文件
-def removeAllFile(path):
+def removeAllFiles(path):
     # 检查路径是否存在
     if not os.path.exists(path):
         print(path + ' 不存在')
@@ -18,7 +18,7 @@ def removeAllFile(path):
         if os.path.isfile(tmp):
             os.remove(tmp)
         else:
-            removeAllFile(tmp)
+            removeAllFiles(tmp)
 
 
 def clear(profile_path):
@@ -26,13 +26,14 @@ def clear(profile_path):
         print('google_profile_path 不存在')
         return
     # 清除缓存的文件和图片
+    # 这个文件夹里的数据相对较大
     res = os.path.join(profile_path, 'Cache/Cache_Data/')
-    removeAllFile(res)
+    removeAllFiles(res)
     # 清除历史记录
     res = os.path.join(profile_path, 'History')
-    removeAllFile(res)
+    removeAllFiles(res)
     res = os.path.join(profile_path, 'History-journal')
-    removeAllFile(res)
+    removeAllFiles(res)
 
 
 # 导入config.json文件的数据
