@@ -1,7 +1,9 @@
 ## ClearGoogleChromeCache
 
-- 清除Google浏览器 缓存的图片和文件
-- 包括浏览记录
+- 清除Google浏览器
+  - 缓存的图片和文件
+  - 浏览记录
+  - 可以自定义删除的路径
 
 ### 使用前
 
@@ -17,14 +19,14 @@
    - 在浏览器输入`chrome://version/`
      - ![image-20220523165434348](images/image-20220523165434348.png)
    - 复制个人资料路径，并将**反斜杠**修改为**斜杆**，同时在路径的最后面加上**斜杆**。
-   - 将路径放置在`config.json`里面
-     - ![image-20220523165750799](images/image-20220523165750799.png)
+   - 将路径放置在`config.yml`里面
+     - ![image-20221020171624565](images/image-20221020171624565.png)
 
 2. 运行**clearGoogleChromeCache.exe**，清除google浏览器缓存的数据。
 
 ### 补充
 
-- 确保**clearGoogleChromeCache.exe**与**config.json**在同一个目录下。
+- 确保**clearGoogleChromeCache.exe**与**config.yml**在同一个目录下。
 - 执行**clearGoogleChromeCache.exe**前，请暂时关闭谷歌浏览器。
 - 很多浏览器有关闭浏览器清空缓存的功能，而谷歌浏览器反其道而行之，实在难以理解。
 

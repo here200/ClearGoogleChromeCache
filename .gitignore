@@ -1,2 +1,5 @@
-# 忽略工程文件
-/Project/*
+# Project
+/**/Project/*
+
+# python_temp_files
+/**/__pycache__/*
