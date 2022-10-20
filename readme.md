@@ -1,6 +1,6 @@
 ## ClearGoogleChromeCache
 
-- 清除Google浏览器
+- 清除Google浏览数据包括
   - 缓存的图片和文件
   - 浏览记录
   - 可以自定义删除的路径
