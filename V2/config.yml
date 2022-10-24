@@ -1,8 +1,0 @@
-google:
-  profile_path: C:/Users/KY/AppData/Local/Google/Chrome/User Data/Default/
-  remove_files_path:
-    # 清除缓存的文件和图片，这个文件夹里的数据相对较大
-    - Cache/Cache_Data/
-    # 清除历史记录
-    - History
-    - History-journal
